@@ -1,0 +1,20 @@
+<!--setup to have the template that Handlebars can render into-->
+<!--create a button that will submit the user input into the database-->
+
+<h1>Eat-Da-Burger</h1>
+
+<ul>
+  {{#each burgers}}
+   <li>
+       <p>
+           {{this.id}}. {{this.burger_name}}
+
+           <button data-burgerid="{{this.id}}" class="delburger">Delete</button>
+       </p>
+   </li>
+   {{/each}}
+</ul>
+
+
+
+
