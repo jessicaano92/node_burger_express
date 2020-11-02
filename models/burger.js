@@ -1,6 +1,11 @@
-var orm = require("./config/orm.js");
+let orm = require("../config/orm.js");
 
 
+var cat = {
+
+
+
+}
 orm.selectAll("burger_name", "devoured", "burgers"); //unsure what to put in
 
 orm. insertOne("burger_name", "devoured", "burgers");
@@ -9,7 +14,7 @@ orm.updateOne("burger_name", "burgers");
 
 
 
-module.exports = orm;   //is this the right export?
+module.exports = orm;   //correct export?
 
 
 

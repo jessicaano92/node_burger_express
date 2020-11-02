@@ -1,17 +1,28 @@
-var express = require ("express");
-var orm = require("./models/burger.js"); 
+let express = require ("express");
+let orm = require("./models/burger.js"); 
 //unsure about var orm?
 
-router = express.Router();
+let router = express.Router();
 
 
-//create the route
-router.get("/", function(){
+//create the routes
+router.get("/", function(req, res){
+    
+});
 
-})
 
 
 
+router.post("", function(req, res) {
+
+});
+
+
+
+
+router.put("", function(req, res){
+
+});
 
 
 module.exports = router;
