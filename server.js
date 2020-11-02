@@ -1,8 +1,8 @@
 let express = require("express");
 let exphbs = require("express-handlebars");
 let app = express();
-// let orm = require("./models/burger.js");
-// let orm = require("./config/orm.js"); 
+let orm = require("./models/burger.js");          //change var name
+let orm = require("./config/orm.js"); 
 
 let PORT = process.env.PORT || 8080;
 

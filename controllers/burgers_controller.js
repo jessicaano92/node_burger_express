@@ -1,7 +1,5 @@
 let express = require ("express");
-let orm = require("./models/burger.js"); 
-//unsure about var orm?
-
+let burger = require("./models/burger.js"); 
 let router = express.Router();
 
 
