@@ -1,6 +1,6 @@
 
 
-//connect Node to MySQL
+//MySQL connection
 
 let mysql = require("mysql");
 let connection;

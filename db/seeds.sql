@@ -1,7 +1,7 @@
 USE burgers_db;
 
 INSERT INTO burgers (burger_name, devoured)
-VALUES ("The Double Double", true);
+VALUES ("The Double Double", false);
 
 INSERT INTO burgers (burger_name, devoured)
 VALUES ("Holy Chuck", true);

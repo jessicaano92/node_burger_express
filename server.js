@@ -1,8 +1,7 @@
 let express = require("express");
-let exphbs = require("express-handlebars");
+let exphbs = require("express-handlebars");  //setting handlbars
 let app = express();
-let orm = require("./models/burger.js");          //change var name
-let orm = require("./config/orm.js"); 
+
 
 let PORT = process.env.PORT || 8080;
 
@@ -17,7 +16,7 @@ app.set("view engine", "handlebars");
 app.use(express.static("public"));
 
 let routes = require("./controllers/burgers_controller.js")
-app.use(routes)
+app.use(routes);
 
 
 
