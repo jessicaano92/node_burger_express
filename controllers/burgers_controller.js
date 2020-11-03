@@ -16,9 +16,9 @@ router.get("/", function(req, res){
 
 router.post("api/burgers", function(req, res) {
     burger.create([
-        "name", "The Double Double"
+        "burger_name", "devoured"
     ], [
-        req.body.name, req.body.   //unsure how to fill this out
+        req.body.name, req.body.devoured //explanation
     ], function(result) {
 
         res.json({ id: result.insertId });
@@ -30,11 +30,20 @@ router.put("/api/burgers/:id", function(req, res){
     var condition = "id = " + req.params.id;
     console.log("condition", condition);
 
-    //update burger
+    burger.update({
+        devoured: req.body.devoured 
+        
+    }, condition, function(result){
+        if (result.changedRows === 0) {
+            return res.status(404).end();
+        } else {
+            res.status(200).end();
+        }
+    })
 });
 
 
-
+//do I need router.delete?
 router.delete("/api/burgers/:id", function(req, res){
     var condition = "id = " + req.params.id; 
 

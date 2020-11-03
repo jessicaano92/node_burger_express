@@ -27,7 +27,7 @@ var burger = {
         });
     }
 };
-module.exports = orm;   //correct export?
+module.exports = burger;   //correct export?
 
 
 
