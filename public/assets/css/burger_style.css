@@ -1,0 +1,35 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    padding-top: 100px;
+}
+.devoured {
+    padding-top: 100px;
+}
+
+.delete_burger {
+    
+    padding-right: 50px;
+}
+
+
+body {
+    background-color: #ff8c00;
+}
+
+.add_burger {
+    text-align: center;
+   
+    
+}
+
+#burger_name {
+    text-align: center;
+}
+
+.create-form {
+    text-align: center;
+    padding: 50px;
+}
